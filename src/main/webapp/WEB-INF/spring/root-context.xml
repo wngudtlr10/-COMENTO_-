@@ -1,37 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
-	<!-- Root Context: defines shared resources visible to all other web components -->
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:mvc="http://www.springframework.org/schema/mvc"
+    xmlns:mybatis-spring="http://mybatis.org/schema/mybatis-spring"
+    xmlns:tx="http://www.springframework.org/schema/tx"
+    xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd
+        http://mybatis.org/schema/mybatis-spring http://mybatis.org/schema/mybatis-spring-1.2.xsd
+        http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
+        http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.3.xsd">
+
+
+	<!-- DB 연결 정보  -->
+	<!-- DataSource 등록 : 데이터베이스의 정보들을 포장하고있는 애들 -->
 	<bean id="dataSource"
         class="org.springframework.jdbc.datasource.DriverManagerDataSource">
-        <property name="driverClassName"
-            value="net.sf.log4jdbc.sql.jdbcapi.DriverSpy"></property>
-        <property name="url"
-            value="jdbc:log4jdbc:mariadb://127.0.0.1:3360/theater" />
-        <property name="username" value="root" />
-        <property name="password" value="falled9845@" />
+        <!-- drive 경로 -->
+        <property name="driverClassName" value="net.sf.log4jdbc.sql.jdbcapi.DriverSpy"></property>
+        <!-- url 경로 -->
+        <property name="url" value="jdbc:log4jdbc:mariadb://127.0.0.1:3360/theater" ></property>
+        <!-- id -->
+        <property name="username" value="root" ></property>
+        <!-- password -->
+        <property name="password" value="falled9845@" ></property>
     </bean>
  
+ 	<!-- MariaDB 설정기능 사용하도록 세팅 -->
+ 	<!-- mybatis 주요 객체  sessionFactory클래스 bean 등록 -->
     <bean id="sqlSessionFactory"
         class="org.mybatis.spring.SqlSessionFactoryBean">
+        <!-- setter를 통한 의존성 주입 -->
         <property name="dataSource" ref="dataSource"></property>
+        <!-- MyBatis 설정파일 경로 설정 -->
         <property name="configLocation"
             value="classpath:/mybatis/mybatis-config.xml"></property>
+        <!-- sql문이 작성될 mapper.xml파일  경로 저장   -->
         <property name="mapperLocations"
             value="classpath*:/mybatis/sql/*.xml"></property>
     </bean>
  
+ 	<!-- 트랜잭션 관리와 쓰레드 처리, DB연결 및 종료를 관리 -->
     <bean id="sqlSession"
         class="org.mybatis.spring.SqlSessionTemplate">
         <constructor-arg name="sqlSessionFactory"
             ref="sqlSessionFactory"></constructor-arg>
     </bean>
-   
-   <!-- <mybatis-spring:scan base-package="com.devfun.dao" /> -->
- 	<context:component-scan
+ 
+    <!-- [컴포넌트 자동 스캔 명령] -->
+    <!-- 자동주입 명령을 사용하기 위해 위치를 알려줘야한다. -->
+    <context:component-scan
         base-package="com.devfun.dao"></context:component-scan>
     <context:component-scan
         base-package="com.devfun.service"></context:component-scan>
- c</beans>
-        
+</beans>

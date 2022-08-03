@@ -53,5 +53,4 @@ public class MovieVO {
 		return "MovieVO [movie_id=" + movie_id + ", movie_name=" + movie_name + ", director=" + director + ", type="
 				+ type + ", moviecol=" + moviecol + "]";
 	}
-
 }

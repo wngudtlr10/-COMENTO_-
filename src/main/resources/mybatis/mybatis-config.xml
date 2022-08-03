@@ -24,6 +24,6 @@
 			 	</select> 
 	 -->
     <typeAliases>
-        <typeAlias type="com.quartz.vo.MovieVO" alias="movieVO" />
+        <typeAlias type="com.devfun.vo.MovieVO" alias="movieVO" />
     </typeAliases>
 </configuration>

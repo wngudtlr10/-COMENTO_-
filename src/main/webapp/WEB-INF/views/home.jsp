@@ -9,7 +9,7 @@
 	<h1>
 		Movie 테이블 정보
 	</h1>
-	
+
 	<table>
 	        <thead>
 	            <tr>
