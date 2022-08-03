@@ -3,7 +3,7 @@
 간단한 API 문서를 작성하여 개발하고 업무 프로세스를 이해합니다.
 # -COMENTO_백엔드 실무 1주차 주간보고-
 
-## 1차 과제: 개발 환경 셋팅
+## 1주차 과제: 개발 환경 셋팅
 
 ### 1.형상관리
 - Github 계정 생성 (완료)
@@ -17,7 +17,33 @@
   - Spring 설치(완료)
 - Hello World 출력(완료)
 - mariaDB, mySql WorkBench 설치 및 샘플 DB 구축(완료)
-- 스프링, Mariadb, MyBatis 연동, 데이터 조회(진행중)
+- 스프링, Mariadb, MyBatis 연동, 데이터 조회(완료)
 
 ### 3. 기타
 - [형식님의 Notion ](https://www.notion.so/1-_-7dbf35ea97aa4e39acfe25e99d971065)을 통해 개발 과정 기록 
+---
+# -COMENTO_백엔드 실무 2주차 주간보고-
+
+## 2주차 과제: HTTP와 REST에 대한 공부 및 간단한 API 문서작성
+
+### 1. HTTP
+- HTTP 프로토콜
+  - HTTP 프로토콜 개념 (완료)
+  - HTTP 프로토콜 동작원리 (완료)
+  - HTTP 프로토콜 구조 (완료)
+  
+### 2. REST, RESTful, REST API
+- REST
+  - REST란? (완료)
+  - RESTful이란? (완료)
+  - REST API란? (완료)
+
+### 3. API 문서 작성
+- 개요
+  - 문서 정보 (완료)
+  - 데이터 규칙 (완료)
+-API
+  -
+  
+### 4. 기타
+- [형식님의 2주차 Notion](https://www.notion.so/2-_-2f3be6055fb9409cb0b008efb5627e5a)을 통해 개발 과정 기록
