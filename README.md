@@ -20,7 +20,7 @@
 - 스프링, Mariadb, MyBatis 연동, 데이터 조회(완료)
 
 ### 3. 기타
-- [형식님의 Notion ](https://www.notion.so/1-_-7dbf35ea97aa4e39acfe25e99d971065)을 통해 개발 과정 기록 
+- [형식님의 Notion ](https://www.notion.so/1-_-a4dbeab1b75b4a66b6573728a35ac0e1)을 통해 개발 과정 기록 
 ---
 # -COMENTO_백엔드 실무 2주차 주간보고-
 
@@ -46,4 +46,4 @@
   -
   
 ### 4. 기타
-- [형식님의 2주차 Notion](https://www.notion.so/2-_-2f3be6055fb9409cb0b008efb5627e5a)을 통해 개발 과정 기록
+- [형식님의 2주차 Notion](https://www.notion.so/2-_-75dd41cd12b94c018b70f47cba93e9eb)을 통해 개발 과정 기록
