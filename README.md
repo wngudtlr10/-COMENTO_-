@@ -46,5 +46,5 @@
   -
   
 ### 4. 기타
-- [형식님의 2주차 HTTP & REST 개념 정리] (https://www.notion.so/2-_-75dd41cd12b94c018b70f47cba93e9eb)을 통해 정리(완료)
+- [형식님의 2주차 HTTP & REST 개념 정리](https://www.notion.so/2-_-75dd41cd12b94c018b70f47cba93e9eb)을 통해 정리(완료)
 - API 문서작성(진행중) 일요일까지 마감 예정
