@@ -79,6 +79,7 @@
 ---
 1. 년별 접속자 수  
 ![image](https://user-images.githubusercontent.com/50539146/185772716-13bcdca2-9809-444a-b509-52f5c2d7d8e9.png)  
+
 '''sql
    <!-- sql 년별 로그인 수 -->
     <select id="selectYearLogin" parameterType="string" resultType="hashMap">
@@ -86,9 +87,11 @@
         from statistic.requestinfo ri
         where left(ri.createDate, 2) = #{year};
     </select>
+    
 ---    
 2. 월별 접속자 수  
 ![image](https://user-images.githubusercontent.com/50539146/185772738-3f391f8d-d568-447a-9b00-33558f827412.png)  
+
 '''sql
   <!-- sql 월별 로그인 수 -->
     <select id="selectMonthLogin" parameterType="string" resultType="hashMap">
@@ -98,9 +101,11 @@
       group by monthly
       order by monthly;
     </select>
+    
 ---    
 3. 일별 접속자 수  
 ![image](https://user-images.githubusercontent.com/50539146/185772739-84de013d-15ed-42ae-86f9-7f913c9431be.png)  
+
 '''sql
   <!-- sql 일별 로그인 수 -->
     <select id="selectDailyLogin" parameterType="string" resultType="hashMap">
@@ -110,9 +115,11 @@
       group by daily
       order by daily;
     </select>
+    
 ---
 4. 평균 하루 로그인 수  
 ![image](https://user-images.githubusercontent.com/50539146/185772741-c173f3c2-6ba4-4668-99a4-1d663863bcbf.png)  
+
 '''sql
   <!-- sql 일별 평균 로그인 수 -->
     <select id="selectDailyAvgLogin" parameterType="string" resultType="hashMap">
@@ -127,9 +134,11 @@
       GROUP BY daily
       ORDER BY daily;
     </select>
+    
 ---
 5. 휴일을 제외한 로그인 수  
 ![image](https://user-images.githubusercontent.com/50539146/185772746-e4466ec3-d5e7-4ea2-934c-3776f3063417.png)  
+
 '''sql
    <!-- sql 휴일을 제외한 월별 로그인 수 -->
      <select id="selectHollydayLogin" parameterType="string" resultType="hashMap">
@@ -143,9 +152,11 @@
       GROUP BY monthly
       ORDER BY monthly;
     </select>
-  ---  
+    
+---  
 6. 부서별 월별 로그인 수  
 ![image](https://user-images.githubusercontent.com/50539146/185772751-45bf59d3-2689-4d8d-96e5-485c13cc8008.png)  
+
 '''sql
   <!-- sql 부서별 로그인 수 -->
      <select id="selectDepartmentLogin" parameterType="string" resultType="hashMap">
@@ -155,4 +166,5 @@
       group by department
       order by department;
     </select>
+    
 ### 5. 기타
