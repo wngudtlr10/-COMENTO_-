@@ -78,7 +78,7 @@
 ### 1. SW활용 현황 통계 API 구축을 위한 SQL 개발(완료)
 ---
 1. 년별 접속자 수  
-![image](https://user-images.githubusercontent.com/50539146/185772716-13bcdca2-9809-444a-b509-52f5c2d7d8e9.png)  
+![image](https://user-images.githubusercontent.com/50539146/185773681-8b6b5fbb-f439-4caf-a7ef-6d2cc44e4faa.png)  
 
 '''sql
    <!-- sql 년별 로그인 수 -->
@@ -90,7 +90,7 @@
     
 ---    
 2. 월별 접속자 수  
-![image](https://user-images.githubusercontent.com/50539146/185772738-3f391f8d-d568-447a-9b00-33558f827412.png)  
+![image](https://user-images.githubusercontent.com/50539146/185773689-96589862-33c4-4aef-b60c-b149bec2941c.png)    
 
 '''sql
   <!-- sql 월별 로그인 수 -->
@@ -104,7 +104,7 @@
     
 ---    
 3. 일별 접속자 수  
-![image](https://user-images.githubusercontent.com/50539146/185772739-84de013d-15ed-42ae-86f9-7f913c9431be.png)  
+![image](https://user-images.githubusercontent.com/50539146/185773691-c3e5042e-3623-4cef-b675-9df2c5644abc.png)   
 
 '''sql
   <!-- sql 일별 로그인 수 -->
@@ -118,7 +118,7 @@
     
 ---
 4. 평균 하루 로그인 수  
-![image](https://user-images.githubusercontent.com/50539146/185772741-c173f3c2-6ba4-4668-99a4-1d663863bcbf.png)  
+![image](https://user-images.githubusercontent.com/50539146/185773694-02c30a61-f7a3-4120-a7ec-1b3919678de9.png)   
 
 '''sql
   <!-- sql 일별 평균 로그인 수 -->
@@ -137,7 +137,7 @@
     
 ---
 5. 휴일을 제외한 로그인 수  
-![image](https://user-images.githubusercontent.com/50539146/185772746-e4466ec3-d5e7-4ea2-934c-3776f3063417.png)  
+![image](https://user-images.githubusercontent.com/50539146/185773699-f2232bc7-2afc-48b8-bfbf-899410c8de1e.png)    
 
 '''sql
    <!-- sql 휴일을 제외한 월별 로그인 수 -->
@@ -155,7 +155,7 @@
     
 ---  
 6. 부서별 월별 로그인 수  
-![image](https://user-images.githubusercontent.com/50539146/185772751-45bf59d3-2689-4d8d-96e5-485c13cc8008.png)  
+![image](https://user-images.githubusercontent.com/50539146/185773705-13ad763e-4a82-4eb7-a51e-83d01c344419.png)    
 
 '''sql
   <!-- sql 부서별 로그인 수 -->
