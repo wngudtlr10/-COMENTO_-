@@ -77,6 +77,9 @@
 
 ### 1. SW활용 현황 통계 API 구축을 위한 SQL 개발(완료)
 ---
+![image](https://user-images.githubusercontent.com/50539146/185773721-cbf17d58-6e31-4a84-8d69-054ce2da7431.png)  
+
+
 1. 년별 접속자 수  
 ![image](https://user-images.githubusercontent.com/50539146/185773681-8b6b5fbb-f439-4caf-a7ef-6d2cc44e4faa.png)  
 
